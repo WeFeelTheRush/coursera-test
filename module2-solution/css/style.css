@@ -1,32 +1,77 @@
 /********** Base styles **********/
 * {
     box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: 200;
   }
+
+  body {
+    margin-left: 20px;
+    margin-right:10px;
+  }
+
   h1 {
     margin-bottom: 15px;
+    text-align: center;
+  }
+
+  div {
+    border: 1px solid black;
   }
   
   p {
-    border: 1px solid black;
-    background-color: #A52A2A;
-    width: 90%;
-    height: 150px;
-    margin-right: auto;
-    margin-left: auto;
-    font-family: Helvetica;
+    padding: 3px;
+  }
+
+  .menu-item, .menu-item-3 {
+    margin-right: 20px;
+    background-color: gray;
+  }
+
+  .section-title-1 {
+    background-color: pink;
+  }
+
+  .section-title-2 {
+    background-color: red;
     color: white;
   }
+
+  .section-title-3 {
+    background-color: rgb(212, 212, 97);
+  }
+
+  .section-title {
+    float: right;
+    clear: left;
+    width:200px;
+    text-align:center;
+    border: 1px solid black;
+  }
+
+  .section-title > p {
+    padding: 10px;
+    margin: 0;
+  }
+
+  .section-content {
+    padding-top: 30px;
+  }
+
+  .section-content > p {
+    padding-left: 10px; 
+    padding-right: 10px;
+  }
   
-  /* Simple Responsive Framework. */
   .row {
     width: 100%;
   }
   
-  /********** Large devices only **********/
   @media (min-width: 992px) {
     .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
       float: left;
-      border: 1px solid green;
+      border: 1px solid black;
+      margin-bottom: 5px;
     }
     .col-lg-1 {
       width: 8.33%;
@@ -38,7 +83,7 @@
       width: 25%;
     }
     .col-lg-4 {
-      width: 33.33%;
+      width: 31.00%;
     }
     .col-lg-5 {
       width: 41.66%;
@@ -66,11 +111,21 @@
     }
   }
   
-  /********** Medium devices only **********/
   @media (min-width: 768px) and (max-width: 991px) {
+    .menu-item {
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+    .menu-item-3 {
+      margin-left: 10px;
+      margin-bottom: 5px;
+      width: 85.66%;
+      float: left;
+    }
     .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
       float: left;
-      border: 1px solid green;
+      border: 1px solid black;
     }
     .col-md-1 {
       width: 8.33%;
@@ -107,6 +162,14 @@
     }
     .col-md-12 {
       width: 100%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .menu-item, .menu-item-3 {
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-bottom: 15px;
     }
   }
   
