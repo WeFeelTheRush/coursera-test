@@ -1,0 +1,37 @@
+body {
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Oxygen', sans-serif;
+}
+
+#burger-menu ul {
+    background-color: aquamarine;
+}
+
+#burger-menu li {
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 0%;
+    margin-top: 0%;
+}
+
+#burger-menu span {
+    color: black;
+}
+
+#content {
+    margin: 0px, 50px !important;
+}
+
+#text-content {
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 2000px; 
+    background-color: grey;
+}
+
+#menu-heading {
+    margin-top: 0%;
+    margin-bottom: 50px;
+    color: black;
+}
